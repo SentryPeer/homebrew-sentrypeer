@@ -3,4 +3,5 @@
 
 Install [SentryPeer](https://github.com/SentryPeer/SentryPeer) from this homebrew tap
 
-    brew install sentrypeer/sentrypeer
+    brew tap sentrypeer/sentrypeer
+    brew install sentrypeer
