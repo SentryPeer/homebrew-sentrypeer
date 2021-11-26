@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only
+# Copyright (c) 2021 Gavin Henry <ghenry@sentrypeer.org>
+
+name: Build and Test
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+jobs:
+  install:
+    name: Install brew tap then sentrypeer
+    runs-on: macos-latest
+    steps:
+      - name: Install
+        run: |
+          brew tap sentrypeer/sentrypeer
+          brew install sentrypeer
