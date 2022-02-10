@@ -5,6 +5,9 @@ class Sentrypeer < Formula
   sha256 "bfad4a572a3d7b17aa62b1642cc38b4ee786393068aeaa101ec3bcaf4ab970fd"
   license any_of: ["GPL-2.0-only", "GPL-3.0-only"]
 
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "pkg-config" => :build
   depends_on "cmocka" => [:build, :test]
   depends_on "curl" => [:build, :test]
   depends_on "libosip"
