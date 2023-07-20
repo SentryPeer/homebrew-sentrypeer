@@ -1,8 +1,8 @@
 class Sentrypeer < Formula
   desc "Honeypot for a distributed p2p list of bad actor IP addresses and phone numbers"
   homepage "https://sentrypeer.org"
-  url "https://github.com/SentryPeer/SentryPeer/releases/download/v2.0.1/sentrypeer-2.0.1.tar.gz"
-  sha256 "358cc2ee99fade7d91f5e41f9a0a94e7526f96f61b4bbcd91aa34c3ac079aaa3"
+  url "https://github.com/SentryPeer/SentryPeer/releases/download/v3.0.1/sentrypeer-3.0.1.tar.gz"
+  sha256 "7485ceaa06c58fcde6f9b0763988d5a405802ded218357991e898d91d821748f"
   license any_of: ["GPL-2.0-only", "GPL-3.0-only"]
 
   depends_on "autoconf" => :build
