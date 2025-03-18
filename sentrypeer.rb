@@ -15,7 +15,9 @@ class Sentrypeer < Formula
   depends_on "jansson"
   depends_on "libmicrohttpd"
   depends_on "libosip"
+  depends_on "libtool"
   depends_on "opendht"
+  depends_on "ossp-uuid"
   depends_on "pcre2"
 
   def install
