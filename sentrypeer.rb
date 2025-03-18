@@ -11,12 +11,12 @@ class Sentrypeer < Formula
   depends_on "curl" => [:build, :test]
   depends_on "pkg-config" => :build
   depends_on "rust" => [:build, :test]
+  depends_on "curl"
   depends_on "jansson"
   depends_on "libmicrohttpd"
   depends_on "libosip"
-  depends_on "pcre2"
   depends_on "opendht"
-  depends_on "curl"
+  depends_on "pcre2"
 
   def install
     system "./configure", *std_configure_args, "--disable-silent-rules"
