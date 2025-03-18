@@ -13,6 +13,5 @@ Install [SentryPeer](https://github.com/SentryPeer/SentryPeer) from this homebre
 ## Testing and auditing the formula
 
     brew tap sentrypeer/sentrypeer
-    brew install sentrypeer
+    brew install --include-test sentrypeer
     brew audit --strict --new --online
-    brew test sentrypeer
