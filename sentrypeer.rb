@@ -10,7 +10,7 @@ class Sentrypeer < Formula
   depends_on "cmocka" => [:build, :test]
   depends_on "curl" => [:build, :test]
   depends_on "pkg-config" => :build
-  depends_on "rust" => :build
+  depends_on "rust" => [:build, :test]
   depends_on "jansson"
   depends_on "libmicrohttpd"
   depends_on "libosip"
