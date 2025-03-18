@@ -5,3 +5,14 @@ Install [SentryPeer](https://github.com/SentryPeer/SentryPeer) from this homebre
 
     brew tap sentrypeer/sentrypeer
     brew install sentrypeer
+
+## Build locally
+
+    brew install --build-from-source ./sentrypeer.rb
+
+## Testing and auditing the formula
+
+    brew tap sentrypeer/sentrypeer
+    brew install sentrypeer
+    brew audit --strict --new --online
+    brew test sentrypeer
