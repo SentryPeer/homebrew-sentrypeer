@@ -18,4 +18,5 @@ jobs:
       - name: Install
         run: |
           brew tap sentrypeer/sentrypeer
+          brew trust --formula sentrypeer/sentrypeer/sentrypeer
           brew install --include-test sentrypeer
