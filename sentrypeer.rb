@@ -22,6 +22,7 @@ class Sentrypeer < Formula
   depends_on "pcre2"
 
   def install
+    ENV["AWS_LC_SYS_NO_JITTER_ENTROPY"] = "1"
     system "./configure", *std_configure_args, "--disable-silent-rules"
     system "make", "install"
   end
